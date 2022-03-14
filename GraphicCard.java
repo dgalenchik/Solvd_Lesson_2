@@ -1,17 +1,15 @@
 public class GraphicCard {
     private String manufacture;
-    private int video_memory_capacity;
-    private int video_chip_serial_number;
+    private int videoMemoryCapacity;
+    private int videoChipSerialNumber;
 
     public GraphicCard() {
     }
 
-    ;
-
-    public GraphicCard(String manufacture, int video_memory_capacity, int video_chip_serial_number) {
+    public GraphicCard(String manufacture, int videoMemoryCapacity, int videoChipSerialNumber) {
         this.manufacture = manufacture;
-        this.video_memory_capacity = video_memory_capacity;
-        this.video_chip_serial_number = video_chip_serial_number;
+        this.videoMemoryCapacity = videoMemoryCapacity;
+        this.videoChipSerialNumber = videoChipSerialNumber;
     }
 
     public String getManufacture() {
@@ -22,27 +20,27 @@ public class GraphicCard {
         this.manufacture = manufacture;
     }
 
-    public int getVideo_memory_capacity() {
-        return video_memory_capacity;
+    public int getVideoMemoryCapacity() {
+        return videoMemoryCapacity;
     }
 
-    public void setVideo_memory_capacity(int video_memory_capacity) {
-        this.video_memory_capacity = video_memory_capacity;
+    public void setVideoMemoryCapacity(int videoMemoryCapacity) {
+        this.videoMemoryCapacity = videoMemoryCapacity;
     }
 
-    public int getVideo_chip_serial_number() {
-        return video_chip_serial_number;
+    public int getVideoChipSerialNumber() {
+        return videoChipSerialNumber;
     }
 
-    public void setVideo_chip_serial_number(int video_chip_serial_number) {
-        this.video_chip_serial_number = video_chip_serial_number;
+    public void setVideoChipSerialNumber(int videoChipSerialNumber) {
+        this.videoChipSerialNumber = videoChipSerialNumber;
     }
 
     //выдаём информацию о Graphic Card
-    public static String graphicCardInfo(GraphicCard graphicCard) {
+    public String graphicCardInfo() {
         return ("Graphic card: " +
-                "Graphic card manufacture: " + graphicCard.getManufacture() + "; " +
-                "Memory capacity: " + graphicCard.getVideo_memory_capacity() + "; " +
-                "Serial number: " + graphicCard.getVideo_chip_serial_number());
+                "Graphic card manufacture: " + getManufacture() + "; " +
+                "Memory capacity: " + getVideoMemoryCapacity() + "; " +
+                "Serial number: " + getVideoChipSerialNumber());
     }
 }

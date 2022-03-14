@@ -1,28 +1,22 @@
 public class Letter {
-    private String letter_text;
+    private String letterText;
 
     public Letter() {
     }
 
-    ;
-
     public Letter(String message) {
-        this.letter_text = message;
+        this.letterText = message;
     }
 
     ;
 
-    public String getLetter_text() {
-        return letter_text;
+    public String getLetterText() {
+        return letterText;
     }
 
-    public void setLetter_text(String letter_text) {
-        this.letter_text = letter_text;
+    public void setLetterText(String letterText) {
+        this.letterText = letterText;
     }
 
-    //создаём метод send
-    public static void send(Letter letter, Client client1, Client client2) {
-        System.out.println("Dear, " + client2.getFirst_name() + " " + client2.getSurname() + ". The following configuration has sent from: " + client1.getFirst_name() + " " + client1.getSurname());
-        System.out.println(letter.getLetter_text());
-    }
+
 }

@@ -1,17 +1,15 @@
 public class Memory {
     private String manufacture;
     private int capacity;
-    private String memory_type;
+    private String memoryType;
 
     public Memory() {
     }
 
-    ;
-
-    public Memory(String manufacture, int capacity, String memory_type) {
+    public Memory(String manufacture, int capacity, String memoryType) {
         this.manufacture = manufacture;
         this.capacity = capacity;
-        this.memory_type = memory_type;
+        this.memoryType = memoryType;
     }
 
     public String getManufacture() {
@@ -30,19 +28,19 @@ public class Memory {
         this.capacity = capacity;
     }
 
-    public String getMemory_type() {
-        return memory_type;
+    public String getMemoryType() {
+        return memoryType;
     }
 
-    public void setMemory_type(String memory_type) {
-        this.memory_type = memory_type;
+    public void setMemoryType(String memoryType) {
+        this.memoryType = memoryType;
     }
 
     //выдаём информацию о Memory
-    public static String memoryInfo(Memory memory) {
+    public String memoryInfo() {
         return ("Memory: " +
-                "Memory manufacture: " + memory.getManufacture() + "; " +
-                "Capacity: " + memory.getCapacity() + "; " +
-                "Memory Type: " + memory.getMemory_type());
+                "Memory manufacture: " + getManufacture() + "; " +
+                "Capacity: " + getCapacity() + "; " +
+                "Memory Type: " + getMemoryType());
     }
 }

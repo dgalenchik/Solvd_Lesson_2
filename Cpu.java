@@ -1,38 +1,36 @@
 public class Cpu {
-    private String cpu_manufacture;
-    private double cpu_frequency;
+    private String cpuManufacture;
+    private double cpuFrequency;
 
     public Cpu() {
     }
 
-    ;
-
-    public Cpu(String cpu_manufacture, double cpu_frequency) {
-        this.cpu_manufacture = cpu_manufacture;
-        this.cpu_frequency = cpu_frequency;
+    public Cpu(String cpuManufacture, double cpuFrequency) {
+        this.cpuManufacture = cpuManufacture;
+        this.cpuFrequency = cpuFrequency;
     }
 
-    public String getCpu_manufacture() {
-        return cpu_manufacture;
+    public String getCpuManufacture() {
+        return cpuManufacture;
     }
 
-    public void setCpu_manufacture(String cpu_manufacture) {
-        this.cpu_manufacture = cpu_manufacture;
+    public void setCpuManufacture(String cpuManufacture) {
+        this.cpuManufacture = cpuManufacture;
     }
 
-    public double getCpu_frequency() {
-        return cpu_frequency;
+    public double getCpuFrequency() {
+        return cpuFrequency;
     }
 
-    public void setCpu_frequency(double cpu_frequency) {
-        this.cpu_frequency = cpu_frequency;
+    public void setCpuFrequency(double cpuFrequency) {
+        this.cpuFrequency = cpuFrequency;
     }
 
     //Выдаём информацию о CPU
-    public static String cpuInfo(Cpu cpu) {
+    public String cpuInfo() {
         return ("Cpu: " + "Cpu manufacture: " +
-                cpu.getCpu_manufacture() + "; " +
+                getCpuManufacture() + "; " +
                 "Cpu frequency: " +
-                cpu.getCpu_frequency());
+                getCpuFrequency());
     }
 }

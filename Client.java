@@ -1,38 +1,37 @@
 public class Client {
-    private String first_name;
-    private String patronymic_name;
+    private String firstName;
+    private String patronymicName;
     private String surname;
 
     public Client() {
     }
 
-    ;
 
-    public Client(String first_name, String surname) {
-        this.first_name = first_name;
+    public Client(String firstName, String surname) {
+        this.firstName = firstName;
         this.surname = surname;
     }
 
-    public Client(String first_name, String patronymic_name, String surname) {
-        this.first_name = first_name;
-        this.patronymic_name = patronymic_name;
+    public Client(String firstName, String patronymicName, String surname) {
+        this.firstName = firstName;
+        this.patronymicName = patronymicName;
         this.surname = surname;
     }
 
-    public String getFirst_name() {
-        return first_name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirst_name(String first_name) {
-        this.first_name = first_name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getPatronymic_name() {
-        return patronymic_name;
+    public String getPatronymicName() {
+        return patronymicName;
     }
 
-    public void setPatronymic_name(String second_name) {
-        this.patronymic_name = patronymic_name;
+    public void setPatronymicName(String patronymicName) {
+        this.patronymicName = patronymicName;
     }
 
     public String getSurname() {

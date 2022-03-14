@@ -1,15 +1,14 @@
 public class AudioCard {
     private String manufacture;
-    private String audio_chip_manufacture;
+    private String audioChipManufacture;
 
     public AudioCard() {
     }
 
-    ;
 
-    public AudioCard(String manufacture, String audio_chip_manufacture) {
+    public AudioCard(String manufacture, String audioChipManufacture) {
         this.manufacture = manufacture;
-        this.audio_chip_manufacture = audio_chip_manufacture;
+        this.audioChipManufacture = audioChipManufacture;
     }
 
     public String getManufacture() {
@@ -20,18 +19,18 @@ public class AudioCard {
         this.manufacture = manufacture;
     }
 
-    public String getAudio_chip_manufacture() {
-        return audio_chip_manufacture;
+    public String getAudioChipManufacture() {
+        return audioChipManufacture;
     }
 
-    public void setAudio_chip_manufacture(String audio_chip_manufacture) {
-        this.audio_chip_manufacture = audio_chip_manufacture;
+    public void setAudioChipManufacture(String audioChipManufacture) {
+        this.audioChipManufacture = audioChipManufacture;
     }
 
     //выдаём информацию об Audiocard
-    public static String audioCardInfo(AudioCard audioCard) {
+    public String audioCardInfo() {
         return ("AudioCard: " +
-                "Manufacture: " + audioCard.getManufacture() + "; " +
-                "Audio chip manufacture: " + audioCard.getAudio_chip_manufacture());
+                "Manufacture: " + getManufacture() + "; " +
+                "Audio chip manufacture: " + getAudioChipManufacture());
     }
 }

@@ -11,8 +11,6 @@ public class Computer {
     public Computer() {
     }
 
-    ;
-
     public Computer(String manufacture, String model, String design, String form, Memory memory, GraphicCard graphicCard, AudioCard audioCard, Cpu cpu) {
         this.manufacture = manufacture;
         this.model = model;
@@ -89,18 +87,23 @@ public class Computer {
     }
 
     //выдаём информацию о Computer
-    public static String computerInfo(Computer computer) {
+    public String computerInfo() {
         return ("Computer: " +
-                "Manufacture: " + computer.getManufacture() + "; " +
-                "Model: " + computer.getModel() + "; " +
-                "Design: " + computer.design + "; " +
-                "Form: " + computer.getForm() + " " +
-                Memory.memoryInfo(computer.memory) + "; " +
-                GraphicCard.graphicCardInfo(computer.graphicCard) + "; " +
-                AudioCard.audioCardInfo(computer.audioCard) + "; " +
-                Cpu.cpuInfo(computer.cpu));
+                "Manufacture: " + getManufacture() + "; "+"\n" +
+                "Model: " + getModel() + "; "+"\n" +
+                "Design: " + getDesign() + "; "+"\n" +
+                "Form: " + getForm() + "; "+"\n" +
+                memory.memoryInfo() + "; "+"\n" +
+                graphicCard.graphicCardInfo() + "; "+"\n" +
+                audioCard.audioCardInfo() + "; "+"\n" +
+                cpu.cpuInfo());
     }
 
+    //создаём метод send
+    public void send(Letter letter, Client client1, Client client2) {
+        System.out.println("Dear, " + client2.getFirstName() + " " + client2.getSurname() + ". The following configuration has sent from: " + client1.getFirstName() + " " + client1.getSurname());
+        System.out.println(letter.getLetterText());
+    }
 
 }
 
